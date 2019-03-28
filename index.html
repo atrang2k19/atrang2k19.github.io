@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+  	<!-- Font -->
+  	<link href="fonts.css" rel="stylesheet" >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Atrang 2.19 | Freshers Welcome Event</title>
+   <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/festLogo.png"/>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/Asthetic Indian.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+
+
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Galley Scripts-->
+
+	<noscript>
+		<style>
+			.es-carousel ul{
+				display:block;
+			}
+		</style>
+	</noscript>
+	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+		<div class="rg-image-wrapper">
+			{{if itemsCount > 1}}
+				<div class="rg-image-nav">
+					<a href="#" class="rg-image-nav-prev" style="background-image: url('./assets/images/nav1.png'); ">Previous Image</a>
+					<a href="#" class="rg-image-nav-next" style="background-image: url('./assets/images/nav2.png'); ">Next Image</a>
+				</div>
+			{{/if}}
+			<div class="rg-image"></div>
+			<div class="rg-loading"></div>
+			<div class="rg-caption-wrapper">
+			<div class="rg-caption" style="display:none;">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</script>
+
+  </head>
+  
+
+
+
+  <body >
+
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div>
+
+
+  	<!--============= Start Header ===========================-->
+	<header id="mu-hero" class="" role="banner">
+		<!-- Start menu  -->
+		<nav class="navbar navbar-fixed-top navbar-default mu-navbar">
+		  	<div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+
+			      <!-- Logo -->
+			     <a class="navbar-brand" href="index.html"><img id="logo_image" style="margin-top:8px" src="assets/images/atrang_icon.jpg"></a>
+			    </div>
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      	<ul class="nav navbar-nav mu-menu navbar-right">
+			      		<li><a href="#mu-hero">Home</a></li>
+				        <li><a href="#mu-about">About Us</a></li>
+				        <li><a href="#mu-schedule">Events</a></li>
+			         	<li><a href="#mu-pricing">Gallery</a></li>
+				        <li><a href="#mu-register">Register</a></li>
+			      	</ul>
+			    </div><!-- /.navbar-collapse -->
+		  	</div><!-- /.container-fluid -->
+		</nav>
+		<!-- End menu -->
+
+		<div class="mu-hero-overlay">
+			<!-- Start hero featured area -->
+        </div>
+
+		<div>
+			<!-- new def featured area -->
+			<img style="position:absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="assets/images/atrang_logo.png"/>
+			<canvas id="scene"></canvas>
+			<input id="copy" type="hidden"/>
+			<!-- End hero featured area -->
+		</div>
+
+	</header>
+	<!-- End Header -->
+
+
+	<!-- Start main content -->
+	<main role="main">
+		<!--=================== Start About ===============================-->
+		<section id="mu-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-about-area">
+							<!-- Start Feature Content -->
+							<div class="row">
+								<div class="col-md-6">
+									<div class="mu-about-left">
+										<img class="" src="assets/images/about_us.jpg" alt="Main Speaker">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="mu-about-right">
+										<h2 class="mu-title" style="margin-bottom:20px">About</h2>
+										<p class="mu-content">Atrang 2.19 is freshers party events of Electronics And Communication Department @ B.P. Poddar Institute Of Management And Technology</p>
+						                <p class="mu-content">Our purpose is to get know our juinors through cultural events </p>
+						                <p class="mu-content">Juniors are requested to be a part of this cultural events and make this event memorable</p></div>
+									</div>
+								</div>
+							</div>
+							<!-- End Feature Content -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About -->
+
+		<!---==================== events start ===============--->
+		<section id="mu-schedule" style="background:#191919">
+			<div class="container">
+				<div class="row">
+					<div class="colo-md-12">
+						<div class="mu-schedule-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-title" style="margin-bottom:20px">Events</h2>
+								<p class="mu-content">Atrang 2.19 presents both online and offline event for freshers. All information and rules are mentioned in this section </p>
+							</div>
+
+							<div class="mu-schedule-content-area">
+								<div class="tab-content mu-schedule-content">
+								    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="first-day">
+								    	<ul>
+                        					<!-- listing 1 Strart-->
+								    		<li>
+								    			<img class = "pro" id = "glamour_hunt" src="assets/images/e1.jpg" alt="event speaker">
+
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">Glamour Hunt</p>
+								    				<h3>Online Event</h3>
+                            						<p style="font-weight:bold">* Closed</p>
+								    				<span class = "mu-content">Message Your Photo along with Cption and Get a chance to win Mr. / Miss. Popular </span>
+                            					<br>
+												<button class = "mu-rule-button" onclick="glamourRules()"> Rules </button>
+												<div class = "mu-event-rules" id="glamourRules" style="display: none">
+													<span class = "mu-rule-content" >
+													<br><br> &#11044; A participant can submit only one photo.The decision of the judges will be final .
+													<br><br> &#11044; The caption should be unique and within 120 characters.
+													<br><br> &#11044; Photo can be a selfie or a normal photo but only an individual must be present(no group photos).
+													<br><br> &#11044; Autolikers are strictly banned. If found guilty photo will be disqualified.
+													<br><br> &#11044; Likes will be counted only if both the user and liker have liked the page.
+													<br><br> &#11044; Caption shouldn't be copied.
+													</span>
+													<br>
+													<button class = "mu-rule-close-button" onclick="glamourRules()"> Collapse Rules </button>
+												</div>
+												</div>
+								    		</li>
+								    		 <!-- listing 1 end -->
+
+					                        <!-- listing 2 start-->
+					                        <li>
+					                          <img class = "pro"  id = "alfaaz-atrangi" src="assets/images/e2.jpg" alt="event speaker">
+
+					                          <div class="mu-single-event">
+
+					                            <p class="mu-event-time">Alfaaz Atrangi</p>
+					                            <h3>Online Event</h3>
+					                            <p style="font-weight:bold">* Open</p>
+					                            <div style="padding:0px 20px">
+					                              <span class = "mu-content">
+					                                Spill your hearts out whether it's fantasy , grievance or a love note. This event is not only for the extroverts out there but also for the introverts. The link to confess is <a href="http://stulish.com/atrang_gossips">Click Here</a> to Go through link and write your secret message .
+					                              </span>
+					                            </div>
+					                            <br>
+					                          <button class = "mu-rule-button" onclick="alfaazRules()"> Rules </button>
+					                          <div class = "mu-event-rules" id="alfaazRules" style="display: none">
+					                          <span class = "mu-rule-content" >
+					                            <br><br> &#11044; Use of foul language will not be tolerated.
+					                            <br><br> &#11044; There is no language barrier. You can send message or confess in any language you want.
+					                            <br><br> &#11044; The decision of whether the confession gets posted or not entirely rests in the hands of Team Atrang.
+					                          </span>
+					                          <br>
+					                          <button class = "mu-rule-close-button" onclick="alfaazRules()"> Collapse Rules </button>
+					                          </div>
+					                      	  </div>
+					                        </li>
+					                         <!-- listing 2 end-->
+								    	</ul>
+                  					</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Event -->
+
+
+		<!--================== Galley Start  ==============-->
+		<section id="mu-pricing" >
+			<div class="container-fluid">
+				<div class="row no-gutter" >
+
+					<div class="mu-pricing-area no-gutter">
+						<div class="mu-pricing-content" style="align-items: center;">
+
+							<h1 id = "gallery-title" class="mu-title">Zorion 2.18 Memories</h1>
+
+							<div id="rg-gallery" class="rg-gallery">
+								<div class="rg-thumbs">
+									<!-- Elastislide Carousel Thumbnail Viewer -->
+									<div class="es-carousel-wrapper">
+										<div class="es-nav">
+											<span id = "new" class="es-nav-prev">Previous</span>
+											<span id = "new" class="es-nav-next">Next</span>
+										</div>
+										<div class="es-carousel">
+											<ul>
+												<li><a href="#"><img src="assets/images/g00.jpg" data-large="assets/images/g00.jpg" alt="image01" /></a></li>
+												<li><a href="#"><img src="assets/images/g01.jpg" data-large="assets/images/g01.jpg" alt="image02"/></a></li>
+												<li><a href="#"><img src="assets/images/g02.jpg" data-large="assets/images/g02.jpg" alt="image03"/></a></li>
+												<li><a href="#"><img src="assets/images/g03.jpg" data-large="assets/images/g03.jpg" alt="image04"/></a></li>
+												<li><a href="#"><img src="assets/images/g04.jpg" id = "fifth_image" data-large="assets/images/g04.jpg" alt="image05"/></a></li>
+												<li><a href="#"><img src="assets/images/g05.jpg" data-large="assets/images/g05.jpg" alt="image02"/></a></li>
+												<li><a href="#"><img src="assets/images/g06.jpg" data-large="assets/images/g06.jpg" alt="image03"/></a></li>
+												<li><a href="#"><img src="assets/images/g07.jpg" data-large="assets/images/g07.jpg" alt="image04"/></a></li>
+												<li><a href="#"><img src="assets/images/g08.jpg" data-large="assets/images/g08.jpg" alt="image02"/></a></li>
+												<li><a href="#"><img src="assets/images/g09.jpg" data-large="assets/images/g09.jpg" alt="image03"/></a></li>
+												<li><a href="#"><img src="assets/images/g10.jpg" data-large="assets/images/g10.jpg" alt="image04"/></a></li>
+												<li><a href="#"><img src="assets/images/g11.jpg" data-large="assets/images/g11.jpg" alt="image02"/></a></li>
+												<li><a href="#"><img src="assets/images/g12.jpg" data-large="assets/images/g12.jpg" alt="image03"/></a></li>
+												<li><a href="#"><img src="assets/images/g13.jpg" data-large="assets/images/g13.jpg" alt="image04"/></a></li>
+												<li><a href="#"><img src="assets/images/g14.jpg" data-large="assets/images/g14.jpg" alt="image03"/></a></li>
+												<li><a href="#"><img src="assets/images/g15.jpg" data-large="assets/images/g15.jpg" alt="image04"/></a></li>
+												<li><a href="#"><img src="assets/images/g16.jpg" data-large="assets/images/g16.jpg" alt="image03"/></a></li>
+												<li><a href="#"><img src="assets/images/g17.jpg" data-large="assets/images/g17.jpg" alt="image03"/></a></li>                  					
+												<li><a href="#"><img src="assets/images/g18.jpg" data-large="assets/images/g18.jpg" alt="image03"/></a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- End Elastislide Carousel Thumbnail Viewer -->
+								</div><!-- rg-thumbs -->
+							</div><!-- rg-gallery -->
+						</div><!-- content -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Gallery -->
+
+		
+
+		<!--======================== Start Register =====================-->
+
+		<section id="mu-register" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" >
+						<div class="mu-register-area" >
+
+							<div class="mu-title-area" >
+								<h2 class="mu-title">Atrang2.19 Registration</h2>
+								<p class = "mu-content"></p>
+
+								<a href="#">
+									<button type="submit" id="contact-submit" class="mu-reg-submit-btn">Register</button>
+								</a>
+								<h2 class="mu-title" style="padding-top: 50px;">Contact</h2>
+									<div class="row at-contact-index">
+
+					                  <div class="col-md-1"></div>
+
+					                  <div class="col-md-2">
+										  <div class="at-contact-profile">
+					                      <h2>Cultural</h2>
+					                      <div class="at-contact-thumbnail">
+					                        <image src="assets/images/ulogo.png" />
+					                      </div>
+					                      <div class="at-contact-details">
+					                        <p class="at-contact-name">Kriti Goel</p>
+					                        <p class="at-contact-phone">8004536512</p>
+					                      </div>
+					                    </div>
+									  </div>
+
+					                  <div class="col-md-2">
+										<div class="at-contact-profile">
+					                      <h2>Event</h2>
+					                      <div class="at-contact-thumbnail">
+					                        <image src="assets/images/ulogo.png" />
+					                      </div>
+					                      <div class="at-contact-details">
+					                        <p class="at-contact-name">Gourab Ghosh</p>
+					                        <p class="at-contact-phone">8017423319</p>
+					                      </div>
+					                     </div>
+										</div>
+
+					                  <div class="col-md-2">
+										<div class="at-contact-profile">
+					                      <h2>Event</h2>
+					                      <div class="at-contact-thumbnail">
+					                        <image src="assets/images/ulogo.png" />
+					                      </div>
+					                      <div class="at-contact-details">
+					                        <p class="at-contact-name">Niprojit Ghosh</p>
+					                        <p class="at-contact-phone">7686932781</p>
+					                      </div>
+					                     </div>
+										</div>
+
+					                  <div class="col-md-2">
+										<div class="at-contact-profile">
+					                      <h2>Technical</h2>
+					                      <div class="at-contact-thumbnail">
+					                        <image src="assets/images/ulogo.png" />
+					                      </div>
+					                      <div class="at-contact-details">
+					                        <p class="at-contact-name">Anubhov Menon</p>
+					                        <p class="at-contact-phone">9874434629</p>
+					                      </div>
+					                    </div>
+									  </div>
+
+									  <div class="col-md-2">
+										<div class="at-contact-profile">
+					                      <h2>Technical</h2>
+					                      <div class="at-contact-thumbnail">
+					                        <image src="assets/images/ulogo.png" />
+					                      </div>
+					                      <div class="at-contact-details">
+					                        <p class="at-contact-name">Abhishek Gupta</p>
+					                        <p class="at-contact-phone">8583961560</p>
+					                      </div>
+					                    </div>
+									  </div>
+
+					                  <div class="col-md-1"></div>
+								</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Register -->
+
+	</main>
+
+	<!-- End main content -->
+
+	<!-- Start footer -->
+	<footer id="mu-footer" role="contentinfo">
+		<div class="container">
+			<div class="mu-footer-area">
+				<div class="mu-footer-top">
+					<center>
+            			<h2>Follow On Facebook</h2>
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fatrang2.19%2F&tabs=timeline&width=300&height=360&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="360" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					</center>
+				</div>
+    		</div>
+    	</div>
+	</footer>
+
+	<footer id="mu-footer" style="background:#232323;color:#cccccc" role="contentinfo">
+		<div class="container">
+		    <div class="mu-footer-area">
+		     	<p style="color"><b>Developed By | <a style="color:#9a9a9a" href="http://github.com/gautam0x">Gautam Kumar</a></b></p>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer -->
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+	<!-- Slick slider -->
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- Event Counter -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- Ajax contact form  -->
+    <script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.elastislide.js"></script>
+
+
+
+
+
+
+
+
+
+    <!-- Custom js -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+<script>
+	function alfaazRules(){
+	var x = document.getElementById("alfaazRules");
+	if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function glamourRules(){
+	var y = document.getElementById("glamourRules");
+	if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+}
+</script>
+
+
+
+  </body>
+</html>

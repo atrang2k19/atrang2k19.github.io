@@ -891,7 +891,7 @@ button:focus {
 
 
 .mu-event-timeline ul li .mu-single-event {
-	background-color: #242424;
+	background-color: #141414;
 	color: white;
 	position: relative;
 	top: 0;
@@ -899,6 +899,10 @@ button:focus {
 	padding: 15px;
 	text-align: left;
 	border-radius: 6px;
+}
+
+.mu-event-timeline ul li .mu-single-event .mu-content{
+	color:#e60000;
 }
 
 .mu-event-timeline ul li:nth-child(2n) .mu-single-event {

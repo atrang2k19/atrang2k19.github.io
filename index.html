@@ -144,7 +144,7 @@
 		<!-- End About -->
 
 		<!---==================== events start ===============--->
-		<section id="mu-schedule" style="background:#191919">
+		<section id="mu-schedule" style="background:#212121">
 			<div class="container">
 				<div class="row">
 					<div class="colo-md-12">
@@ -194,7 +194,7 @@
 
 					                            <p class="mu-event-time">Alfaaz Atrangi</p>
 					                            <h3>Online Event</h3>
-					                            <p style="font-weight:bold">* Open</p>
+					                            <p style="font-weight:bold">Closed</p>
 					                            <div style="padding:0px 20px">
 					                              <span class = "mu-content">
 					                                Spill your hearts out whether it's fantasy , grievance or a love note. This event is not only for the extroverts out there but also for the introverts. The link to confess is <a href="http://stulish.com/atrang_gossips">Click Here</a> to Go through link and write your secret message .
@@ -214,6 +214,39 @@
 					                      	  </div>
 					                        </li>
 					                         <!-- listing 2 end-->
+
+					                         <!-- listing 3 start-->
+					                        <li>
+					                          <img class = "pro" id = "glamour_hunt" src="assets/images/e3.jpg" alt="event speaker">
+
+					                          <div class="mu-single-event">
+
+					                            <p class="mu-event-time">Hash Tag</p>
+					                            <h3>Online Event</h3>
+					                            <p style="font-weight:bold">* Open</p>
+					                            <div style="padding:0px 20px">
+					                              <span class = "mu-content">
+					                              	The event is simple, we give you a certain piece(picture, post, situation, etc) and you solve the glaring problem that all Instagram/ Twitter users face, YOU PROVIDE THE #HASHTAGS.Yes, as simple as that, just put an appropriate #hashtag on the piece we post and that's it.
+					                              </span>
+					                            </div>
+					                            <br>
+					                          <button class = "mu-rule-button" onclick="hashtagRules()"> Rules </button>
+					                          <div class = "mu-event-rules" id="hashtagRules" style="display: none">
+					                          <span class = "mu-rule-content" >
+					                            <br><br> &#11044; No abusive words should be used.
+												<br><br> &#11044; Hashtags have to be either a word or a phrase. ( not more than 4 words)
+
+												<br><br> <b>Judgement criteria -:</b>>
+												<br><br> &#11044;The funniest or wittiest hashtag wins.
+												<br><br> &#11044;Each piece will have one winner.
+												<br><br> &#11044;Winners will get exciting gifts on the day of Atrang.
+					                          </span>
+					                          <br>
+					                          <button class = "mu-rule-close-button" onclick="hashtagRules()"> Collapse Rules </button>
+					                          </div>
+					                      	  </div>
+					                        </li>
+					                         <!-- listing 3 end-->
 								    	</ul>
                   					</div>
 								</div>
@@ -439,6 +472,15 @@
 <script>
 	function alfaazRules(){
 	var x = document.getElementById("alfaazRules");
+	if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+	function hashtagRules(){
+	var x = document.getElementById("hashtagRules");
 	if (x.style.display === "none") {
         x.style.display = "block";
     } else {
